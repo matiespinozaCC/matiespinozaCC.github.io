@@ -101,6 +101,8 @@ firebase.firestore().collection("mascotas").get()
     console.error("Error al obtener las mascotas: ", error);
   });
 
+var usuariosRef = firebase.firestore().collection("usuarios");
+
   // Verificar que el usuario es administrador
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
