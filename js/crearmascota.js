@@ -10,6 +10,8 @@ var firebaseConfig = {
 // Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
 
+var usuariosRef = firebase.firestore().collection("usuarios");
+
 function addPet() {
     var ownerEmail = document.getElementById("owner-email").value;
     var petName = document.getElementById("pet-name").value;
@@ -100,8 +102,6 @@ firebase.firestore().collection("mascotas").get()
   .catch((error) => {
     console.error("Error al obtener las mascotas: ", error);
   });
-
-var usuariosRef = firebase.firestore().collection("usuarios");
 
   // Verificar que el usuario es administrador
 firebase.auth().onAuthStateChanged((user) => {
