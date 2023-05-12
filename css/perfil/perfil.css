@@ -58,15 +58,15 @@ button.logout {
   background-color: #c60e0e;
 }
 
-  .back-button {
-    position: absolute;
-    font-size: 18px;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    background-color: #155a90;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 20px;
+.back-button {
+  position: absolute;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #155a90;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px;
 }
