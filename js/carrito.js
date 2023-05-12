@@ -59,7 +59,7 @@ const firebaseConfig = {
                 var productElement = document.createElement("div");
                 productElement.innerHTML = `
                   <h3>${product.nombre}</h3>
-                  <img>${product.imagenUrl</img>
+                  <img src="${producto.imagenUrl}" alt="${producto.nombre}">
                   <p>Precio: $${product.precio}</p>
                   <p>Cantidad: ${product.quantity}</p>
                 `;
