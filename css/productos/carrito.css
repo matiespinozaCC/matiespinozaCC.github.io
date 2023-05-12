@@ -31,8 +31,8 @@ body {
 
   #cart-items img{
     text-align: center;
-    height: 32px;
-    width: 32px;
+    width: 100px;
+    height: 100px;
   }
 
   #cart-items h3{
