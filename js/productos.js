@@ -77,6 +77,7 @@ function addToCart(productId, quantity) {
         return carritoRef.update({ carrito: carrito })
           .then(function() {
             console.log("Producto agregado al carrito");
+            alert("Producto agregado al carrito")
           })
           .catch(function(error) {
             console.log("Error al agregar el producto al carrito: ", error);
