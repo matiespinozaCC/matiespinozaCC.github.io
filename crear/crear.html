@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crear.css">
+    <title>Crear Cliente</title>
+</head>
+<body>
+    <div class="volver">
+        <button id="volverButton">Volver</button>
+    </div>
+    <div class="container">
+        <h1>Registrar nuevo cliente</h1>
+        <form id="newClientForm">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+          </div>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+          </div>
+          <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+          </div>
+          <div>
+            <label for="rut">RUT:</label>
+            <input type="text" id="rut" required>
+          </div>
+          <div>
+            <label for="cirugia">Cirugía realizada:</label>
+            <input type="checkbox" id="cirugia">
+          </div>
+          <div>
+            <label for="enfermedad">Enfermedad de riesgo:</label>
+            <input type="checkbox" id="enfermedad">
+          </div>
+          <button type="submit">Guardar</button>
+        </form>
+      </div>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script src="crear.js"></script>
+</body>
+</html>

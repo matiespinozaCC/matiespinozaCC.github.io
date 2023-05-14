@@ -1,0 +1,65 @@
+.container {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 20px;
+  } 
+
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  input[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .volver {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .volver button {
+    padding: 5px 10px;
+    background-color: rgb(26, 218, 26);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 42px;
+    font-weight: bold;
+  }

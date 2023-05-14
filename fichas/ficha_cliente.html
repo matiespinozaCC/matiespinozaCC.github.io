@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha Cliente</title>
+  <link rel="stylesheet" href="ficha_cliente.css">
+</head>
+<body>
+  <h1>Ficha Cliente</h1>
+
+  <div id="clientDetails">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td id="nombre"></td>
+      </tr>
+      <tr>
+        <th>Apellido</th>
+        <td id="apellido"></td>
+      </tr>
+      <tr>
+        <th>Edad</th>
+        <td id="edad"></td>
+      </tr>
+      <tr>
+        <th>RUT</th>
+        <td id="rut"></td>
+      </tr>
+      <tr>
+        <th>Cirugía</th>
+        <td id="cirugia"></td>
+      </tr>
+      <tr>
+        <th>Enfermedad</th>
+        <td id="enfermedad"></td>
+      </tr>
+    </table>
+  </div>
+  
+  <button onclick="generarPDF()">Generar PDF</button>
+  
+  <script src="../lib/jspdf.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="ficha_cliente.js"></script>
+</body>
+</html>
