@@ -124,7 +124,7 @@ logoutButton.addEventListener("click", function() {
     // La sesión se ha cerrado correctamente
     console.log("Sesión cerrada correctamente");
     // Redirigir al usuario a la página de inicio de sesión u otra página deseada
-    window.location.href = "../inicio/inicio.html";
+    window.location.href = "../Inicio/inicio.html";
   }).catch(function(error) {
     // Ocurrió un error al cerrar la sesión
     console.log("Error al cerrar la sesión: ", error);
