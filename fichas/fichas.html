@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fichas.css">
+</head>
+<body>
+  <div class="logout">
+    <button id="logoutButton">Cerrar sesión</button>
+</div>
+<div class="crear">
+  <button id="crearButton">Crear Cliente</button>
+</div>
+<div class="container">
+<h1>Lista de clientes</h1>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar por Rut">
+    <button id="searchButton">Buscar Cliente</button>
+</div>
+<div class="table-responsive">
+  <table class="client-table" id="clientTable">
+    <thead>
+      <tr>
+        <th data-label="Nombre">Nombre</th>
+        <th data-label="Apellido">Apellido</th>
+        <th data-label="Edad">Edad</th>
+        <th data-label="Rut">Rut</th>
+        <th data-label="Cirugía">Cirugía</th>
+        <th data-label="Enfermedad">Enfermedad</th>
+        <th data-label="Acciones">Acciones</th> <!-- Nueva columna para el botón de eliminar -->
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>  
+</div>
+
+<!-- Importar la biblioteca de Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="fichas.js"></script>
+</body>
+</html>
