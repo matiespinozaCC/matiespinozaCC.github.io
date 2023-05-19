@@ -37,6 +37,7 @@ function addPet() {
         })
         .then((docRef) => {
           console.log("Mascota agregada correctamente con ID: ", docRef.id);
+            location.reload()
         })
         .catch((error) => {
           console.error("Error al agregar la mascota: ", error);
