@@ -14,6 +14,8 @@ firebase.initializeApp(firebaseConfig);
 // Obtener elementos del formulario
 const registroForm = document.querySelector('#registro-form');
 const codigoVerificacionLabel = document.querySelector('#codigo-verificacion');
+const botonGenerarCodigo = document.querySelector('#generar-codigo');
+
 
 // Generar código de verificación aleatorio
 const generarCodigoVerificacion = () => {
