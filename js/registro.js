@@ -17,7 +17,12 @@ const codigoVerificacion = document.querySelector('#verificacion');
 
 // Generar código de verificación aleatorio
 const generarCodigoVerificacion = () => {
-    const codigo = randomstring.generate(6); // Genera un código de 6 caracteres
+    const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let codigo = '';
+    for (let i = 0; i < 6; i++) {
+        const indice = Math.floor(Math.random() * caracteres.length);
+        codigo += caracteres.charAt(indice);
+    }
     codigoVerificacion.value = codigo;
 };
 
