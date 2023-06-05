@@ -26,6 +26,7 @@ const generarCodigoVerificacion = () => {
     codigoVerificacion.value = codigo;
 };
 
+
 // Manejar envío del formulario
 registroForm.addEventListener('submit', (e) => {
 	e.preventDefault();
