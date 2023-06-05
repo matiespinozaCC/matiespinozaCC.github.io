@@ -13,6 +13,13 @@ firebase.initializeApp(firebaseConfig);
 
 // Obtener elementos del formulario
 const registroForm = document.querySelector('#registro-form');
+const codigoVerificacion = document.querySelector('#verificacion');
+
+// Generar código de verificación aleatorio
+const generarCodigoVerificacion = () => {
+    const codigo = randomstring.generate(6); // Genera un código de 6 caracteres
+    codigoVerificacion.value = codigo;
+};
 
 // Manejar envío del formulario
 registroForm.addEventListener('submit', (e) => {
@@ -23,6 +30,13 @@ registroForm.addEventListener('submit', (e) => {
 	const password = registroForm['password'].value;
 	const nombre = registroForm['nombre'].value;
 	const apellido = registroForm['apellido'].value;
+	const verificacion = registroForm['verificacion'].value;
+
+	// Verificar que el código de verificación sea correcto
+	if (verificacion !== codigoVerificacion.value) {
+		alert('Código de verificación incorrecto');
+		return;
+	}
 
 	// Registrar usuario en Firebase Auth
 	firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -49,3 +63,5 @@ registroForm.addEventListener('submit', (e) => {
 			console.error('Error al registrar usuario: ', error);
 		});
 });
+
+generarCodigoVerificacion();
