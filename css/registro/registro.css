@@ -68,3 +68,12 @@ button[type="submit"]:hover {
   border-radius: 5px;
   margin: 20px;
 }
+
+.codigo-verificacion {
+  display: flex;
+}
+
+.codigo-verificacion input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
