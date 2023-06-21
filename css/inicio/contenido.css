@@ -36,15 +36,16 @@ body {
     width: 48px;
 }
 
-/* Updated styles for info divs */
-.info {
-    background-color: #ebefe8;
+.info-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 30%;
-    margin: 0 20px 0 25px;
+    margin-top: 50px;
+}
+
+.info {
+    flex: 0 1 30%;
+    margin: 0 20px 50px;
 }
 
 .info h2 {
@@ -61,7 +62,7 @@ body {
 }
 
 .info img {
-    width: 450px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 32px;
 }
