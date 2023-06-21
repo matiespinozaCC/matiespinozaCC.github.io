@@ -63,6 +63,6 @@ body {
 
 .info img {
     width: 100%;
-    height: auto;
+    height: 100px;
     border-radius: 32px;
 }
