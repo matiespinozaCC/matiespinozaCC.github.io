@@ -1,0 +1,159 @@
+/* Codigo para cuerpo de la pagina */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../IMG/marmol.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #ffffff; /* Un color de respaldo por si la imagen no se carga */
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Codigo para la barra de navegacion de la pagina */
+.menu-principal-navbar{ 
+    background-color: #071d49; /* Color de fondo del menú */
+    font-weight: bold; /* Letra negrita */
+}
+
+.menu-principal-navbar a.navbar-brand img{
+    max-width: 120px; /* Tamaño máximo del logo */
+    border-radius: 15px;
+}
+
+.menu-principal-navbar a.nav-link{
+    color: #fff; /* Color de texto del texto del menu */
+}
+
+.menu-principal-navbar a.nav-link.active{
+    color: #ffd700; /* Color de los enlaces del menú cuando esta activo*/
+}
+
+.menu-principal-navbar a.nav-link:hover {
+    color: #ffd700; /* Color de los enlaces del menú al pasar el ratón */
+    transform: scale(1.2); /* Aumento del tamaño al pasar el ratón */
+}
+
+.menu-principal-navbar .form-control {
+    background-color: #fff; /* Color de fondo del campo de búsqueda */
+}
+
+.busqueda input{
+    text-align: center;
+}
+
+.busqueda{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;/* Centrado vertical */
+  }
+
+/* Estilo para botón hamburguesa navbar */
+.custom-toggler .navbar-toggler-icon{
+    background-color: #ffd700;
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
+}
+@media (max-width: 992px) {
+    .menu-principal-navbar a.nav-link{
+        text-align: center;
+    }
+}
+
+/* Estilo para el contenedor principal de las casas */
+.propiedades-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    gap: 20px; /* Espacio entre las casas */
+    justify-items: center; /* Centra las casas horizontalmente en cada columna */  
+}
+
+.propiedad:hover {
+    background-color: #071d49;
+    color: #FFD700;
+}
+
+@media (max-width: 992px) {
+    .propiedades-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Tres columnas por fila */
+        gap: 20px; /* Espacio entre las casas */
+        justify-items: center; /* Centra las casas horizontalmente en cada columna */
+    }
+}
+
+@media (max-width: 701px) {
+    .propiedades-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Tres columnas por fila */
+        gap: 20px; /* Espacio entre las casas */
+        justify-items: center; /* Centra las casas horizontalmente en cada columna */
+    }
+}
+
+/* Estilo para el contenedor de cada casa */
+.propiedad {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo para la imagen de la casa */
+.propiedad img {
+    max-width: 70%;
+    max-height: 300px;
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Espacio entre la imagen y la información */
+}
+
+.propiedad button{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+
+/* Estilo para el título de la casa */
+.propiedad h2 {
+    font-size: 1.5rem; /* Tamaño del título */
+    margin: 10px 0; /* Espacio arriba y abajo del título */
+}
+
+/* Estilo para los detalles de la casa */
+.propiedad p {
+    font-size: 1rem; /* Tamaño del texto */
+    margin: 5px 0; /* Espacio entre los detalles */
+}
+
+/* Estilo para el precio de la casa */
+.propiedad p.precio {
+    font-weight: bold; /* Texto en negrita */
+    color: #FFD700; /* Color dorado para el precio */
+    font-size: 32px;
+}
+
+/* Estilo para el enlace de ubicación */
+.propiedad a.ubicacion {
+    text-decoration: none; /* Sin subrayado para el enlace */
+    color: #007BFF; /* Color azul para el enlace */
+    transition: color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+/* Cambio de color al pasar el ratón sobre el enlace de ubicación */
+.propiedad a.ubicacion:hover {
+    color: #0056b3; /* Color azul más oscuro al pasar el ratón */
+}
