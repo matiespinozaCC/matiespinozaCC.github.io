@@ -39,11 +39,20 @@ body{
     background-color: #fff; /* Color de fondo del campo de búsqueda */
 }
 
-.busqueda{
-margin-top: 10px;
-margin-left: 10%;
-margin-right: 10%;
+.busqueda input{
+    text-align: center;
 }
+
+.busqueda{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 100px;/* Centrado vertical */
+  }
 
 /* Estilo para botón hamburguesa navbar */
 .custom-toggler .navbar-toggler-icon{
