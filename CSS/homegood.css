@@ -33,6 +33,7 @@ body{
 
 .menu-principal-navbar a.navbar-brand img{
     max-width: 120px; /* Tamaño máximo del logo */
+    border-radius: 15px;
 }
 
 .menu-principal-navbar a.nav-link{
