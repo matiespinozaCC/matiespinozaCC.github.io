@@ -81,6 +81,17 @@ body{
     border-radius: 20px;
 }
 
+/* Estilos para dispositivos móviles (menos de 768px) */
+@media (max-width: 768px) {
+    .carousel-item img{
+        max-height: 300px;
+        height: 300px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+}
+
 /* ------------------------------------------------------------------------------- */
 /* Codigo para el modal de la pagina */
 
