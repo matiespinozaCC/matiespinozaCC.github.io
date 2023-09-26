@@ -41,6 +41,7 @@ body{
 
 .busqueda input{
     text-align: center;
+    font-weight: bold;
 }
 
 .busqueda{
@@ -52,6 +53,7 @@ body{
 ::-webkit-input-placeholder {
     text-align: center;
     line-height: 100px;/* Centrado vertical */
+    font-weight: bold;
   }
 
 /* Estilo para botón hamburguesa navbar */
